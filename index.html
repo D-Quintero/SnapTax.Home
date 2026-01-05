@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SnapTax - Privacy Policy</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+            line-height: 1.6;
+            color: #333;
+            background: #f5f5f7;
+            padding: 20px;
+        }
+
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            background: white;
+            padding: 40px;
+            border-radius: 12px;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+        }
+
+        h1 {
+            color: #1d1d1f;
+            font-size: 2.5em;
+            margin-bottom: 10px;
+        }
+
+        .last-updated {
+            color: #86868b;
+            font-size: 0.9em;
+            margin-bottom: 30px;
+            padding-bottom: 20px;
+            border-bottom: 1px solid #e5e5e7;
+        }
+
+        h2 {
+            color: #1d1d1f;
+            font-size: 1.8em;
+            margin-top: 40px;
+            margin-bottom: 15px;
+        }
+
+        h3 {
+            color: #1d1d1f;
+            font-size: 1.3em;
+            margin-top: 30px;
+            margin-bottom: 10px;
+        }
+
+        p {
+            margin-bottom: 15px;
+            color: #515154;
+        }
+
+        ul {
+            margin-left: 20px;
+            margin-bottom: 15px;
+        }
+
+        li {
+            margin-bottom: 8px;
+            color: #515154;
+        }
+
+        .nav {
+            margin-bottom: 30px;
+            padding: 15px;
+            background: #f5f5f7;
+            border-radius: 8px;
+        }
+
+        .nav a {
+            color: #0071e3;
+            text-decoration: none;
+            margin-right: 20px;
+        }
+
+        .nav a:hover {
+            text-decoration: underline;
+        }
+
+        .contact {
+            margin-top: 40px;
+            padding: 20px;
+            background: #f5f5f7;
+            border-radius: 8px;
+        }
+
+        .highlight {
+            background: #fff3cd;
+            padding: 2px 6px;
+            border-radius: 3px;
+        }
+
+        @media (max-width: 600px) {
+            .container {
+                padding: 20px;
+            }
+
+            h1 {
+                font-size: 2em;
+            }
+
+            h2 {
+                font-size: 1.5em;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="nav">
+            <a href="index.html">Privacy Policy</a>
+            <a href="terms.html">Terms of Service</a>
+        </div>
+
+        <h1>Privacy Policy</h1>
+        <p class="last-updated"><strong>Last Updated:</strong> January 4, 2026</p>
+
+        <h2>Introduction</h2>
+        <p>SnapTax ("we", "our", or "us") is committed to protecting your privacy. This Privacy Policy explains how we collect, use, disclose, and safeguard your information when you use our mobile application.</p>
+
+        <h2>Information We Collect</h2>
+
+        <h3>Personal Information You Provide</h3>
+        <p>When you use SnapTax, we collect the following information:</p>
+        <ul>
+            <li><strong>Account Information:</strong> Email address (via Sign in with Apple or email/password authentication)</li>
+            <li><strong>Transaction Data:</strong> Store names, purchase amounts, tax amounts, transaction dates, notes, and categories you create</li>
+            <li><strong>Receipt Images:</strong> Photos you capture or upload of receipts</li>
+            <li><strong>User Preferences:</strong> App settings including theme preferences</li>
+        </ul>
+
+        <h3>Automatically Collected Information</h3>
+        <ul>
+            <li><strong>Device Information:</strong> We do not collect device identifiers or analytics</li>
+            <li><strong>Usage Data:</strong> We do not track your app usage beyond what's necessary for core functionality</li>
+        </ul>
+
+        <h2>How We Use Your Information</h2>
+        <p>We use the information we collect to:</p>
+        <ul>
+            <li>Provide and maintain the SnapTax service</li>
+            <li>Process and store your receipts and transaction data</li>
+            <li>Perform optical character recognition (OCR) on receipt images</li>
+            <li>Enable you to organize, categorize, and export your expense data</li>
+            <li>Sync your data across your devices</li>
+            <li>Respond to your requests and provide customer support</li>
+            <li>Improve and optimize our application</li>
+        </ul>
+
+        <h2>Data Processing</h2>
+
+        <h3>OCR Processing</h3>
+        <p>Receipt images are processed using Apple's on-device Vision framework for OCR (Optical Character Recognition). This processing happens <strong>locally on your device</strong> and the text extraction does not involve third-party services.</p>
+
+        <h3>Cloud Storage</h3>
+        <p>Your data is stored using Supabase, a secure cloud database service:</p>
+        <ul>
+            <li><strong>What is stored:</strong> Account information, transaction data, receipt images, and categories</li>
+            <li><strong>Where it's stored:</strong> Supabase servers (PostgreSQL database and object storage)</li>
+            <li><strong>How it's secured:</strong> All data transmission uses HTTPS encryption. Your data is protected by Supabase's security measures including row-level security (RLS) policies that ensure you can only access your own data.</li>
+        </ul>
+
+        <h2>Data Sharing and Disclosure</h2>
+        <p><strong>We do not sell, trade, or rent your personal information to third parties.</strong></p>
+        <p><strong>Service Provider:</strong> We use Supabase as our backend infrastructure provider. Supabase has access to your data only as necessary to provide their services and is bound by confidentiality obligations.</p>
+        <p><strong>Legal Requirements:</strong> We may disclose your information if required to do so by law or in response to valid requests by public authorities.</p>
+
+        <h2>Your Data Rights</h2>
+
+        <h3>Access and Export</h3>
+        <ul>
+            <li>You can export all your transaction data in CSV format at any time through the app's Export feature</li>
+            <li>Exported data includes all transactions, amounts, categories, and dates</li>
+        </ul>
+
+        <h3>Deletion</h3>
+        <ul>
+            <li>You can delete individual transactions and receipts at any time</li>
+            <li>You can delete your entire account and all associated data through Settings > Delete Account</li>
+            <li>When you delete your account, we permanently delete all transaction records, receipt images, categories, and account information</li>
+        </ul>
+
+        <h3>Modification</h3>
+        <ul>
+            <li>You can edit or update your transaction data at any time</li>
+            <li>You can modify your app preferences including theme settings</li>
+        </ul>
+
+        <h2>Data Retention</h2>
+        <ul>
+            <li><strong>Active Accounts:</strong> We retain your data for as long as your account is active</li>
+            <li><strong>Deleted Accounts:</strong> Upon account deletion, all your data is permanently removed from our systems</li>
+            <li><strong>Receipt Images:</strong> Deleted receipt images are immediately removed from cloud storage</li>
+        </ul>
+
+        <h2>Children's Privacy</h2>
+        <p>SnapTax is not intended for use by children under the age of 13. We do not knowingly collect personal information from children under 13.</p>
+
+        <h2>Security</h2>
+        <p>We implement appropriate technical and organizational measures to protect your personal information:</p>
+        <ul>
+            <li>All data transmission uses HTTPS encryption</li>
+            <li>Authentication via Sign in with Apple or secure password authentication</li>
+            <li>Row-level security (RLS) in our database ensuring data isolation between users</li>
+            <li>Secure cloud storage with access controls</li>
+            <li>Regular security updates and patches</li>
+        </ul>
+
+        <h2>Changes to This Privacy Policy</h2>
+        <p>We may update our Privacy Policy from time to time. We will notify you of any changes by posting the new Privacy Policy on this page and updating the "Last Updated" date.</p>
+
+        <h2>Third-Party Services</h2>
+        <h3>Supabase</h3>
+        <p>Our backend infrastructure is powered by Supabase. For information on how Supabase handles data, please review their privacy policy at: <a href="https://supabase.com/privacy" target="_blank">https://supabase.com/privacy</a></p>
+
+        <h3>Apple Services</h3>
+        <p>We use Apple's Sign in with Apple for authentication and Apple's Vision framework for on-device OCR processing.</p>
+
+        <h2>California Privacy Rights (CCPA)</h2>
+        <p>If you are a California resident, you have specific rights:</p>
+        <ul>
+            <li><strong>Right to Know:</strong> Request information about the personal data we collect</li>
+            <li><strong>Right to Delete:</strong> Request deletion of your personal information (available through in-app account deletion)</li>
+            <li><strong>Right to Opt-Out:</strong> We do not sell your personal information</li>
+            <li><strong>Right to Non-Discrimination:</strong> We will not discriminate against you for exercising your privacy rights</li>
+        </ul>
+
+        <div class="contact">
+            <h2>Contact Us</h2>
+            <p>If you have questions or concerns about this Privacy Policy, please contact us:</p>
+            <p><strong>Email:</strong> <span class="highlight">yellow3zx@icloud.com</span></p>
+        </div>
+    </div>
+</body>
+</html>
